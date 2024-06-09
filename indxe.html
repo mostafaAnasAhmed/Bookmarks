@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bookmark</title>
+</head>
+<body>
+<main class="py-4 min-vh-100 position-relative">
+    <div class="container d-flex flex-column justify-content-center align-content-center">
+        <h1 class="py-3 position-relative">Bookmarker</h1>
+        <div class="bookmark-items py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+        <h2 class="mt-4 linear"> <i class="fa-solid i-linear  fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid  i-linear  fa-bookmark"></i></h2>
+        <div class="site-name w-100 d-flex flex-column justify-content-center">
+        <label for="bookMarkName" class="py-2 fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+        <input
+            type="text"
+            placeholder="Bookmark Name"
+            class="form-control"
+            id="bookmarkName"/>
+        </div>
+        <div class="site-url w-100 d-flex flex-column justify-content-center">
+        <label for="bookmarkURL" class="pb-2 fw-bold"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+        <input
+            type="url"
+            placeholder="Website URL"
+            class="form-control"
+            id="bookMarkURL"/>
+        </div>
+        <button class="button py-2 rounded-2 px-5" id="Btn">Submit</button>
+    </div>
+    <table class="table mt-4 text-center bg-light">
+        <thead>
+        <th class="table-head">index</th>
+        <th class="table-head">Website Name</th>
+        <th class="table-head">Visit</th>
+        <th class="table-head">Delete</th>
+        </thead>
+        <tbody class="" id="tableContent">
+
+        </tbody>
+    </table>
+    </div>
+
+    <div id="box" class="box d-none">
+        <div class="alert-opasity d-flex justify-content-center align-items-center">
+            <div id="box-content" class="alert-content bg-white p-3 rounded-2">
+                <div class="doted d-flex m-2">
+                    <div class="dot-red me-2"></div>
+                    <div class="dot-green me-2"></div>
+                    <div class="dot-yellow"></div>
+                </div>
+                    
+                <i id="closeMSG" class="fa fa-times position-absolute top-0 end-0 m-4"></i>
+            <h4 class="pt-2">Site Name or Url is not Valid, please follow the rules below:</h4>
+            <p><i class="fa fa-arrow-circle-right  text-danger me-1"></i>Site Name must contain at least 3 Characters</p>
+            <p><i class="fa fa-arrow-circle-right  text-danger me-1"></i>Site URL must be avalid one</p>
+            </div>
+        </div>
+    </div>
+</main>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
